@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slideshow{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6rem;
+    justify-content: space-between;
+
+    font-family: "Libre-Baskerville-Bold";
+    font-size: 48px;
+}
+
+.header :nth-child(2){
+    justify-self: flex-end;
+}
+
+.header > h5 {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+
+    text-align: right;
+    letter-spacing: 2.57143px;
+
+    color: #7D7D7D;
+}
+
+/*Divider*/
+.divider{
+    border: 1px solid #e5e5e5;
+    flex-basis: 100%;
+}
+
+
