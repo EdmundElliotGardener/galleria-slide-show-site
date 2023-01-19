@@ -9,7 +9,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 2rem;
     /* border: 2px solid #A092cc; */
     padding: 2rem;
 }
@@ -38,7 +38,7 @@
     justify-self: flex-end;
 }
 
-.header > h5 {
+.header-link{
     font-family: 'Libre Baskerville';
     font-style: normal;
     font-weight: 700;
@@ -49,8 +49,12 @@
     letter-spacing: 2.57143px;
 
     color: #7D7D7D;
+    text-decoration: none;
 }
 
+.header-link:hover{
+ color: #000;
+}
 /*Divider*/
 .divider{
     border: 1px solid #e5e5e5;
@@ -271,6 +275,12 @@
     align-items: flex-end;
 }
 
+.column:hover{
+    background-color: #f2f2f2;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+}
+
 
 .gallery-text{
     margin-top: 150px;
@@ -288,6 +298,7 @@
     gap: 5px;
 }
 
+
 .gallery-text > p{
     font-family: 'Libre Baskerville';
     font-style: normal;
@@ -300,3 +311,4 @@
     mix-blend-mode: normal;
     opacity: 0.75;
 }
+
