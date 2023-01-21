@@ -14,13 +14,14 @@ body {
   overflow: hidden;
 }
 .hero {
-  background-image: url(./assets/the-basket-of-apples/hero-small.jpg);
+  background-image: url(../src/assets/the-basket-of-apples/hero-small.jpg);
   position: absolute;
   left: 10.29%;
   right: 5.37%;
   top: 0%;
-  bottom: 50.26%;
+  bottom: 35.26%;
   top: calc(10% - 16px / 2 - -1.5px);
+  background-repeat: no-repeat;
 }
 .container {
   position: absolute;
@@ -80,7 +81,7 @@ p {
   font-size: 14px;
   line-height: 28px;
   color: #7d7d7d;
-  text-align: right;
+  text-align: left;
   width: 25rem;
   margin-inline-start: 22rem;
 }
@@ -99,53 +100,32 @@ a {
   color: #7d7d7d;
   width: 25rem;
   text-transform: uppercase;
+  text-align: right;
 }
-h5 {
+button {
   position: absolute;
-  height: 22px;
-  left: 10%;
-  right: 31.48%;
-  top: calc(50% - 16px / 2 + 19.5px);
+  left: 10.89%;
+  width: 15rem;
+  bottom: 35.51%;
+  top: calc(60% - 16px / 1 + 19.5px);
   font-family: "Libre Baskerville";
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 16px;
-  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: #000000;
   mix-blend-mode: normal;
-  opacity: 0.75;
+  border-radius: 5%;
+  cursor: pointer;
 }
-h6 {
-  position: absolute;
-  height: 1px;
-  left: 10%;
-  right: 35.48%;
-  top: calc(50% - 16px / 2 + 35.5px);
-  font-family: "Libre Baskerville";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
-  color: #000000;
-  mix-blend-mode: normal;
-  opacity: 0.75;
-}
-
-.footer {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-  background: #ffffff;
-  border-radius: 10%;
-}
-.nav {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 90.24%;
-  bottom: 0%;
-  box-shadow: #000000;
-  color: red;
+.container2 {
+  display: inline-flex;
+  flex-direction: column;
+  /* right: 20px; */
+  margin-inline-start: 35rem;
+  margin-top: 15rem;
+  /* background-image: url(./assets/girl-with-pearl-earring/artist.jpg); */
 }

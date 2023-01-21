@@ -14,13 +14,14 @@ body {
   overflow: hidden;
 }
 .hero {
-  background-image: url(./assets/the-sleeping-gypsy/hero-small.jpg);
+  background-image: url(../src/assets/the-sleeping-gypsy/hero-small.jpg);
   position: absolute;
   left: 10.29%;
   right: 4.37%;
   top: 03%;
-  bottom: 39.26%;
+  bottom: 30.26%;
   top: calc(10% - 16px / 2 - -1.5px);
+  background-repeat: no-repeat;
 }
 .container {
   position: absolute;
@@ -73,7 +74,7 @@ p {
   height: 364px;
   left: 100.07%;
   right: 290.19%;
-  top: calc(34% - 364px / 2 - 15px);
+  top: calc(54% - 364px / 1 - 15px);
   font-family: "Libre Baskerville";
   font-style: normal;
   font-weight: 700;
@@ -89,7 +90,7 @@ a {
   height: 10%;
   left: -80.07%;
   right: 2.43%;
-  top: calc(40% - 11px / 3 + 253.5px);
+  top: calc(30% - 11px / 3 + 253.5px);
   font-family: "Libre Baskerville";
   font-style: normal;
   font-weight: 700;
@@ -99,53 +100,30 @@ a {
   color: #7d7d7d;
   width: 25rem;
   text-transform: uppercase;
+  text-align: right;
 }
-h5 {
+button {
   position: absolute;
-  height: 22px;
-  left: 10%;
-  right: 31.48%;
-  top: calc(60% - 17px / 2 + 20.5px);
+  left: 10.89%;
+  width: 15rem;
+  bottom: 35.51%;
+  top: calc(60% - 13px / 4 - 1px);
   font-family: "Libre Baskerville";
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 16px;
-  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: #000000;
   mix-blend-mode: normal;
-  opacity: 0.75;
+  border-radius: 5%;
+  cursor: pointer;
 }
-h6 {
-  position: absolute;
-  height: 1px;
-  left: 10%;
-  right: 35.48%;
-  top: calc(63% - 1px / 1 - 1.5px);
-  font-family: "Libre Baskerville";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
-  color: #000000;
-  mix-blend-mode: normal;
-  opacity: 0.75;
-}
-
-.footer-details {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 5%;
-  background: #ffffff;
-  border-radius: 10%;
-}
-.nav {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 90.24%;
-  bottom: 0%;
-  box-shadow: #000000;
-  color: red;
+.container2 {
+  display: inline-flex;
+  flex-direction: column;
+  margin-inline-start: 35rem;
+  margin-top: 15rem;
 }
