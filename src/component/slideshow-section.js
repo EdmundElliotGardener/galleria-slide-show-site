@@ -1,48 +1,78 @@
-import React from 'react'
-import {Link} from 'react-router-dom' 
+import React,{useState} from 'react'
+// import {Link} from 'react-router-dom' 
 import './slideshow.css'
-import Slideshowdata from "../../starter-code/data.json"
+import Slidefooter from './footer'
+import img from '../assets/shared/icon-view-image.svg'
+import Slideshowdata from "../data.json"
 
 
 
 const Slideshowsection = () => {
+    const [counter,setCounter] = useState(0)
+    const [preview, setPreview] = useState("False")
+
+    const contentStyles= {
+        display:"flex",
+        flexDirection:"column",
+        gap: 100
+    }
+    
+    const Slidefooter = {
+        authorName: Slideshowdata[counter].name,
+        artistName: Slideshowdata[counter].artistName,
+    }
+
+    const handleClick = (value) => {
+        return setCounter(prev => prev +(value))
+    }
+
+
   return (
-    <div className="slideshow-section">
-            {Slideshowdata.map((slideshowDetails, index) => {
-                return (<>
-                            <div className='gallery-details'>
-                                <div className='gallery-image'>
-                                    <img>{}</img>
-                                </div>
-                                <div className='gallery-name'>
-                                    <h1>{slideshowDetails.name}</h1>
-                                    <p></p>
-                                </div>
-                                <div className='gallery-artist'>
+    <>
+        <div className="myModal" style={{display: preview ? 'block' : 'none'}}>
+            <span style={{color: '#fff'}} onClick={() => setPreview(!preview)}>Close</span>
+                <img src={Slideshowdata[counter].images.hero.small.toString()} alt="" />
 
-                                </div>
-                            </div>
-                            <div className='artist-message'>
-                                <div className='artist-watermark'>
-                                    {slideshowDetails.years}
-                                </div>
-                                <p> 
-                                    {slideshowDetails.description}
-                                    {/* "Although The Starry Night was painted during 
-                                    the day in Van Gogh's ground-floor studio, 
-                                    it would be inaccurate to state that the picture was 
-                                    painted from memory. 
-                                    The view has been identified as the one from his bedroom window, facing east, a view which Van Gogh painted variations of no fewer than twenty-one times, including The Starry Night. "Through the iron-barred window," he wrote to his brother, Theo, around 23 May 1889, "I can see an enclosed square of wheat ... above which, in the morning, */}
-
-                                </p>
-
-                                <div className='artist-link'>
-                                    <p>{slideshowDetails.source}</p>
-                                </div>
-                            </div>                    
-                        </>)
-                })}
         </div>
+        <section style={contentStyles}>
+            <div className="slideshow-section">
+                <div className='gallery-details'>
+                    <div className='gallery-image'>
+                        <span className="img-tag" onClick={() => setPreview(!preview)}>
+                            <img src={img} alt="" />
+                            VIEW IMAGE
+                        </span>
+                        <img src={Slideshowdata[counter].images.hero.large.toString()} alt="" className='artist' />
+                    </div>
+                    <div className='gallery-name'>
+                        <h1>{Slideshowdata[counter].name}</h1>
+                        <p>{Slideshowdata[counter].artist.name}</p>
+                    </div>
+                    <div className='gallery-artist'>
+                        <img src={Slideshowdata[counter].images.artist.image} alt=""  />
+                    </div>
+                </div>
+                <div className='artist-message'>
+                    <div className='artist-watermark'>
+                        <p className='art-year'>
+                            {Slideshowdata[counter].year}
+                        </p>
+                        <p className='art-description'>
+                            {Slideshowdata[counter].description}
+                        </p>
+                    </div>
+                    <div className='artist-link'>
+                        <a href={Slideshowdata[counter].source} target={'_blank'} className='source-link'>
+                            GO TO SOURCE
+                        </a>
+                    </div>
+                </div>                      
+            </div>
+        </section>
+            <div className='progressBar' style={{ width: (counter+1) * 6.667 + '%'}}></div>
+            
+            <Slidefooter Slideshowdata={Slideshowdata} fireMethod={handleClick}/>
+    </>
   )
 }
 

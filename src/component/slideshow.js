@@ -2,8 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom' 
 import './slideshow.css'
 import Slideshowsection from './slideshow-section'
-// import Slideshowdata from "../../starter-code/data.json"
-
+import Slidefooter from './footer'
 
 const Slideshow = () => {
   return (
@@ -23,11 +22,7 @@ const Slideshow = () => {
         </div>
 
         <Slideshowsection/>
-        
-        <div className='footer-divider'>
-
-        </div>
-        <div className='footer'>
+        {/* <div className='footer'>
             <div className='footer-details' >
                 <h2>Starry Night</h2>
                 <p>Vincent Van Gogh</p>
@@ -40,8 +35,8 @@ const Slideshow = () => {
                     <svg width="26" height="24" xmlns="http://www.w3.org/2000/svg"><g stroke="#000" fill="none" fill-rule="evenodd"><path d="M1.528 1.843l20.538 10.27L1.528 22.382V1.843z" stroke-width="2"/><path fill="#D8D8D8" d="M24.708.5h1v22.775h-1z"/></g></svg>    
                 </div>
             </div>
-        </div>
-
+        </div> */}
+        <Slidefooter/>
     </div>
   )
 }
