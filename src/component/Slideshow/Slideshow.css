@@ -6,13 +6,15 @@
 
 .slideshow{
     /* width: 100vw; */
-    border: 5px solid #230155;
+    /* border: 5px solid #230155; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 2.5rem;
 
     padding: 2rem;
+    padding-bottom: 0;
     
 }
 .slideshow > *{
@@ -52,43 +54,154 @@
 }
 /*Divider*/
 
-/* Gallery details*/
 /* .content-body{
     display: flex;
     flex-direction: column;
 } */
 
+/* Gallery details*/
 .content-body > *{
-    border: 2px solid #f8abdd;
+    /* border: 2px solid #f8abdd; */
 }
 .slideshow-section{
- display: grid;
- grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    column-gap: 2rem;
 }
+
+/* Gallery details*/
 .gallery-details{
     display: flex;
     flex-direction: row;
 }
 .gallery-details > *{
-    border: 2px solid #000;
+    /* border: 2px solid #000; */
 }
 .gallery-image  {
     display: flex;
     flex-direction: row;
     /* gap:1rem; */
 }
-    
+
+.gallery-image > img{
+    width:560px;
+    /* height: 475px; */
+}
+
+/* Gallery-Name */
 .gallery-name{
-    height: 238px;
+    height: 250px;
     width: 445px;
     background-color: #fff;
     position: absolute;
-    left: 40%;
+    left: 34%;
     right: 0%;
-    top: 24%;
+    top: 29.999997%;
     bottom: 0%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.7rem;
+    
+    padding: 0.5rem 2.5rem 0 2.5rem;
+    
 }
 
+.gallery-name > h1{
+    /* width: 380px; */
+    font-family: 'Libre-Baskerville-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+}
+
+.gallery-name > p{
+    font-family: 'Libre-Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #7D7D7D;
+}
+
+/*Gallery-Artist*/
+.gallery-artist {
+    display: flex;
+    position: relative;
+    top: 10%;
+    left: 6%;
+    align-self: flex-end;
+}
+.gallery-artist > img{
+    align-self: flex-end;
+}
+
+/* Artist-Message */
+.artist-message {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    /* border: 2px solid #29a; */
+}
+
+.artist-message > h1{
+    
+    font-family: 'Libre-Baskerville-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 150px;
+    
+    
+    color: #F3F3F3;
+}
+.art-text{
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+}
+
+.art-text > p{
+    width: 350px;
+    height: 336px;
+    
+    margin-top: -40px;
+    
+
+    font-family: 'Libre-Baskerville';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    color: #7D7D7D;
+    
+    z-index: 1;
+}
+
+.art-text > a{
+    
+    font-family: 'Libre-Baskerville';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 1.92857px;
+    text-decoration-line: underline;
+    
+    color: #7D7D7D;
+    
+}
+
+.art-text> a:hover{
+     color: #000;
+}
 .img-tag{
     
     width: 152px;
@@ -112,17 +225,29 @@
 
 
 /*Footer*/
+.progressBar{
+    margin-top: 100px;
+    display: block;
+    background-color: #000000;
+    height: 2px;
+}
+
+
 .footer{
-    /* align-self: flex-start; */
+    /* margin-top: 100px; */
+    
+    align-self: flex-end;
+    /* border: 2px solid #2fa; */
+    /* padding-top: 30px; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+
+    height: 96px;
+    
 }
 
-.footer-divider{
-    border: 1px solid #e5e5e5;
-    flex-basis: 100%;
-}
 
 .footer-details > h2{
     font-family: 'Libre-Baskerville';
