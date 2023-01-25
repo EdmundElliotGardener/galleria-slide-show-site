@@ -1,19 +1,19 @@
 import React from 'react'
 import "./Slideshow.css"
-import Slideshowdata from "../../data.json"
+// import Slideshowdata from "../../data.json"
 
-const Footer = ({Slideshowdata, fireMethod}) => {
+const Footer = ({slideFooter, fireMethod}) => {
     // const Slideshowdata= {
     //     authorName: Slideshowdata[counter].name,
     //     artistName: Slideshowdata[counter].artistName,
     // }
-
+    
   return (
     <div className='footer'>
         
         <div className='footer-details' >
-            <h2>{Slideshowdata.authorName}</h2>
-            <p>{Slideshowdata.artistName}</p>
+            <h2>{slideFooter.authorName}</h2>
+            <p>{slideFooter.artistName}</p>
         </div>
         <div className='footer-nav'>
             <div className='back-nav' onClick={() => fireMethod(-1)}> 

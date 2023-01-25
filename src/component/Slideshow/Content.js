@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import './Slideshow.css'
-// import img from '../../assets/shared/icon-view-image.svg'
+import img from '../../assets/shared/icon-view-image.svg'
 import Slideshowdata from "../../data.json"
 import Footer from './Footer'
 
@@ -10,15 +10,19 @@ const Content = () => {
     const [counter,setCounter] = useState(0)
     const [preview, setPreview] = useState("False")
 
-    
+    const slideFooter = {
+        authorName: Slideshowdata[counter].name,
+        artistName: Slideshowdata[counter].artist.name
+    }
+
     const handleClick = (value) => {
         return setCounter(prev => prev +(value))
     }
     
   return (
     <>
-        {/* <div className="myModal" style={{display: preview ? 'block' : 'none'}} >
-            <span style={{color: '#fff'}} onClick={() => setPreview(!preview)}>Close</span>
+        {/* <div className="myModal" style={{display: !preview ? 'block' : 'none'}} >
+            <span style={{color: '#fff'}} onClick={() => setPreview(preview)}>Close</span>
                 <img src={Slideshowdata[counter].images.hero.small.toString()} alt="" />
 
         </div> */}
@@ -27,10 +31,11 @@ const Content = () => {
             <div className="slideshow-section">
                 <div className='gallery-details'>
                     <div className='gallery-image'>
-                        <img src={Slideshowdata[counter].images.hero.large.toString()} alt="" className='artist' />
-                        {/* <h2 className="img-tag" onClick={() => setPreview(!preview)} >
-                            {/* <img src={img} alt="" /> 
-                            VIEW IMAGE </h2> */}
+                        <img src={Slideshowdata[counter].images.hero.small.toString()} alt="" className='artist' />
+                        <div className="img-tag" onClick={() => setPreview(!preview)}>
+                            <img src={img} alt="" />
+                            <h1>VIEW IMAGE</h1>
+                        </div>
                     </div>
                     <div className='gallery-name'>
                         <h1>{Slideshowdata[counter].name}</h1>
@@ -56,9 +61,9 @@ const Content = () => {
                 </div>                      
             </div>
 
-             <div className='progressBar' style={{ width: (counter+1) * 6.667 + '%'}}></div>
+            <div className='progressBar' style={{ width: (counter+1) * 6.667 + '%'}}></div>
            
-            <Footer Slideshowdata={Slideshowdata} fireMethod={handleClick}/>
+            <Footer slideFooter={slideFooter} fireMethod={handleClick}/>
         </div>
     </>
   )
