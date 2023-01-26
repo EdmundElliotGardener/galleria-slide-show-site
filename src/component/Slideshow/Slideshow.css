@@ -247,8 +247,7 @@
 }
 
 .myModal {
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -256,16 +255,34 @@
     left: 0;
     z-index: 999;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     transition: all 0.9s ease-in;
+}
+.modal-inner{
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.modal-inner >span{
+    cursor: pointer;
+    margin-left: 39rem;
+}
+
+.modal-inner > img{
+    align-self: center;
 }
 
 /*Footer*/
 .progressBar{
+    /* margin: 0; */
+    /* padding: 0 !important; */
     margin-top: 100px;
     display: block;
     background-color: #000000;
-    height: 2px;
+    height: 1px;
 }
 
 
@@ -279,9 +296,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     height: 96px;
-    
 }
 
 .footer-details{
@@ -289,6 +304,7 @@
     flex-direction: column;
     gap: 8px;
 }
+
 .footer-details > h2{
     font-family: 'Libre-Baskerville';
     font-style: normal;
