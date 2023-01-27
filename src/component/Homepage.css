@@ -295,6 +295,11 @@ p {
   opacity: 0.75;
  
 }
+
+
+
+/* ************************************************* */
+/* Tablet Version************************************* */
 @media only screen and (max-width: 768px) {
 
   .grid-gallery {

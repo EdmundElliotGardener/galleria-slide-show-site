@@ -30,6 +30,7 @@
   align-items: center;
   gap: 6rem;
   justify-content: space-between;
+
   font-family: "Libre-Baskerville-Bold";
   font-size: 48px;
 }
@@ -283,4 +284,5 @@ p {
   color: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.75;
+ 
 }
