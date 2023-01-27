@@ -6,7 +6,7 @@
 
 /* BODY*/
 .body {
-  /* min-height: 100vh; */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -14,9 +14,7 @@
   padding: 2rem;
 }
 
-.body > * {
-  /* border: 2px solid #440911; */
-}
+
 
 /*Header*/
 .header {
@@ -30,9 +28,6 @@
   font-size: 48px;
 }
 
-.header > * {
-  /* border: 2px solid #A092cc; */
-}
 
 .header :nth-child(2) {
   justify-self: flex-end;
@@ -73,17 +68,8 @@
   gap: 2.5rem;
 }
 
-.grid-gallery > * {
-  /* background-color: #7d7d7d; */
-  /* border: 2px solid #3398AA; */
-}
-
 /*Gallery-images*/
-.gallery-column-1 > * {
-  /* background-color: chocolate;  */
-  /* background-image: url(../assets/starry-night/thumbnail.jpg);
-    background-size: cover; */
-}
+
 
 .gallery-column-2 > * {
   background-color: coral;
@@ -119,9 +105,9 @@
   row-gap: 2.5rem;
 }
 
-.gallery-items {
+/* .gallery-items {
 }
-
+ */
 /*columns-items*/
 .gallery-text > h2 {
   font-family: "Libre-Baskerville-Bold";
