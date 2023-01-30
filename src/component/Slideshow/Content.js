@@ -21,7 +21,11 @@ const Content = () => {
     
   return (
     <>
+        {/* <div className="myModal" style={{display: !preview ? 'block' : 'none'}} >
+            <span style={{color: '#fff'}} onClick={() => setPreview(preview)}>Close</span>
+                <img src={Slideshowdata[counter].images.hero.small.toString()} alt="" />
 
+        </div> */}
         <div className='content-body'>
 
             <div className="slideshow-section">
