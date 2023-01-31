@@ -21,17 +21,19 @@ const Content = () => {
     
   return (
     <>
-        {/* <div className="myModal" style={{display: !preview ? 'block' : 'none'}} >
-            <span style={{color: '#fff'}} onClick={() => setPreview(preview)}>Close</span>
-                <img src={Slideshowdata[counter].images.hero.small.toString()} alt="" />
-
-        </div> */}
         <div className='content-body'>
 
+            <div className="myModal" style={{display: !preview ? 'block' : 'none'}} >
+                <div className='modal-inner'>
+                    <span style={{color: '#fff'}}  onClick={() => setPreview(!preview)}><h5>Close</h5></span>
+                        <img src={Slideshowdata[counter].images.hero.small.toString()} alt="" />
+                </div>
+
+            </div>
             <div className="slideshow-section">
                 <div className='gallery-details'>
                     <div className='gallery-image'>
-                        <img src={Slideshowdata[counter].images.hero.small.toString()} alt="" className='artist' />
+                        <img src={Slideshowdata[counter].images.hero.large.toString()} alt="" className='artist' />
                         <div className="img-tag" onClick={() => setPreview(!preview)}>
                             <img src={img} alt="" />
                             <h1>VIEW IMAGE</h1>
@@ -61,6 +63,7 @@ const Content = () => {
                 </div>                      
             </div>
 
+            <div className='progressBg'></div>
             <div className='progressBar' style={{ width: (counter+1) * 6.667 + '%'}}></div>
            
             <Footer slideFooter={slideFooter} fireMethod={handleClick}/>
