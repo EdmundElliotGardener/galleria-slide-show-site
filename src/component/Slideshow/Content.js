@@ -63,6 +63,7 @@ const Content = () => {
                 </div>                      
             </div>
 
+            <div className='progressBg'></div>
             <div className='progressBar' style={{ width: (counter+1) * 6.667 + '%'}}></div>
            
             <Footer slideFooter={slideFooter} fireMethod={handleClick}/>
