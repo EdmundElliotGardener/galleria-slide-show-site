@@ -1,7 +1,7 @@
 import './App.css';
 import {Routes, Route} from "react-router-dom"
 import Slideshow from './component/Slideshow/Slideshow';
-import Homepage from './component/homepage';
+import Homepage from './component/Homepage';
 // import Gallery from './component/Gallery/Gallery';
 
 function App() {
