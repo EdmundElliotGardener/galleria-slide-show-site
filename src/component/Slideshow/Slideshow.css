@@ -16,9 +16,7 @@
   padding: 2rem;
   padding-bottom: 0;
 }
-.slideshow > * {
-  /* border: 5px solid #888 ; */
-}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -40,7 +38,6 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
-
   text-align: right;
   letter-spacing: 2.57143px;
   text-decoration: none;
@@ -58,9 +55,7 @@
 } */
 
 /* Gallery details*/
-.content-body > * {
-  /* border: 2px solid #f8abdd; */
-}
+
 .slideshow-section {
   width: 100%;
   padding-top: 4rem;
@@ -68,7 +63,6 @@
   display: grid;
   grid-template-columns: 65% 35%;
   column-gap: 2rem;
- /*  margin-top: -1%; */
 }
 
 /* Gallery details*/
@@ -76,13 +70,10 @@
   display: flex;
   flex-direction: row;
 }
-.gallery-details > * {
-  /* border: 2px solid #000; */
-}
+
 .gallery-image {
   display: flex;
   flex-direction: row;
-  /* gap:1rem; */
 }
 
 .gallery-image > img {
@@ -143,13 +134,9 @@
 .artist-message {
   display: flex;
   flex-direction: column;
-  /* align-items: flex-end; */
   align-items: center;
   margin-top: 3rem;
-  /* margin-left: -15rem; */
   margin-left: 2.78%;
-  
-
 }
 
 .artist-message > h1 {
@@ -320,6 +307,7 @@
   opacity: 0.15;
   /* transform: matrix(-1, 0, 0, 1, 0, 0); */
 }
+
 @media only screen and (max-width: 768px) {
   .slideshow {
     width: 100%;

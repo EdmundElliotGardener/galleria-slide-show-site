@@ -17,11 +17,21 @@ const Slideshow = () => {
 
 
   return (
-    <div className='slideshow'>
-        <Header/>
+    <div className="slideshow">
+      <Header />
 
-        <Content/>
-        {/* <div className='footer'>
+      <Content />
+    {/*   {<svg
+        width="768"
+        height="1"
+        viewBox="0 0 768 1"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="768" height="1" fill="#E5E5E5" />
+      </svg}> */}
+
+      {/* <div className='footer'>
             <div className='footer-details' >
                 <h2>Starry Night</h2>
                 <p>Vincent Van Gogh</p>
@@ -35,10 +45,8 @@ const Slideshow = () => {
                 </div>
             </div>
         </div> */}
-        
     </div>
-
-  )
+  );
 }
 
 export default Slideshow
