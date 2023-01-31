@@ -3,10 +3,7 @@ import "./Slideshow.css"
 // import Slideshowdata from "../../data.json"
 
 const Footer = ({slideFooter, fireMethod}) => {
-    // const Slideshowdata= {
-    //     authorName: Slideshowdata[counter].name,
-    //     artistName: Slideshowdata[counter].artistName,
-    // }
+    
     
   return (
     <div className='footer'>
