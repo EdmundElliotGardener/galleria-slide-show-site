@@ -1,6 +1,5 @@
 import React from 'react'
 import "./Homepage.css"
-// import "./Tablet/tablet.css";
 import {Link} from 'react-router-dom'
 
 const Homepage = () => {
