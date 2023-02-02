@@ -36,13 +36,13 @@
   font-family: "Libre-Baskerville";
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 8px;
   line-height: 15px;
   text-align: right;
   letter-spacing: 2.57143px;
   text-decoration: none;
-
-  color: #7d7d7d;
+  color: #7d7d7d; 
+ 
 }
 .header-link:hover {
   color: #000;
@@ -236,6 +236,7 @@
     z-index: 999;
     width: 100%;
     height: 100%;
+    opacity: 0.85;
     transition: all 0.9s ease-in;
     /* scroll-behavior: hidden; */
 }
@@ -265,7 +266,7 @@
     background-color: #000000;
     margin-left: 0 ! important;
     margin-right: 0 ! important;
-    height: 1px;
+    height: 2px;
     z-index: 1;
 }
 .progressBg{
@@ -277,7 +278,7 @@
     margin-top: 50px;
     display: block;
     background-color: #e5e5e5;
-    height: 1px;
+    height: 2px;
     z-index: -1;
 } */
 
@@ -326,8 +327,10 @@
 
 .footer-nav {
   display: flex;
-  flex-direction: row;
+ justify-content: flex-end;
   gap: 1rem;
+  margin-top: -2rem;
+  
 }
 
 .back-nav:hover {
