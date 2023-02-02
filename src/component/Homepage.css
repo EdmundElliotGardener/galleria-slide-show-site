@@ -54,7 +54,7 @@
 }
 /*Divider*/
 .divider {
-  border: 1px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
   flex-basis: 100%;
 }
 
@@ -306,55 +306,3 @@ p {
    margin-top: -2rem;
   }
 }
-
-/* *****************************************************
-/*******************************************************/
-/*Mobile Version****************************************/
- @media screen and (min-width: 375px) and (max-width: 480px) {
-  /* .body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  } */
- .grid-gallery {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1.5rem;
-  }
-  .gallery-details{
-    display: flex;
-    flex-direction: column;
-  }
-  .gallery-name{
-    display: flex;
-    flex-direction: column;
-    width: 390px;
-    height: 104px;
-    left: 24px;
-    top: 680px;
-  }
-  .gallery-artist{
-     display: flex;
-    flex-direction: column;
-    margin-top: 55%;
-    left: -185px;
-  }
-  .gallery-message{
-    width: 327px;
-    height: 517px;
-    left: 24px;
-    top: 482px;
-  }
-  .gallery-message > h1{
-   display: flex;
-   width: 160%;
-   top: calc(50% - 100px/2 - 208.5px);
-   
-  } 
- .footer-details {
-    width: 2rem;
-  } 
-.footer-nav{
-    width: 1rem;
-  }
-}  
