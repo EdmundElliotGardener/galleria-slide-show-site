@@ -332,10 +332,9 @@ p {
     flex-direction: row;
   }
   .gallery-image > img {
-      width: 340px;
-    /* height: 475px*/
+    width: 352px;
+    /* height: 475px; */
     height: 100%;
-}
   }
 
   .img-tag {
@@ -393,7 +392,7 @@ p {
   }
   .gallery-message > h1 {
     display: flex;
-    width: 150%;
+    width: 10%;
     top: calc(50% - 100px / 2 - 208.5px);
   }
   .artist-message {
@@ -420,4 +419,4 @@ p {
   .footer-nav {
     display: flex;
   }
-
+}
