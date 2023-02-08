@@ -1,5 +1,4 @@
 * {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -36,7 +35,7 @@
   font-family: "Libre-Baskerville";
   font-style: normal;
   font-weight: 700;
-  font-size: 8px;
+  font-size: 9px;
   line-height: 15px;
   text-align: right;
   letter-spacing: 2.57143px;
@@ -72,8 +71,7 @@
 
 .gallery-image {
   display: flex;
-  flex-direction: row;
-  background: red;
+  flex-direction: column;
   position: relative;
 }
 
@@ -355,43 +353,57 @@
 /* *****************************************************
 /*******************************************************/
 /*Mobile Version****************************************/
-@media screen and (min-width: 375px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .body {
     height: 1138px;
-    width: 385px;
+    /* width: 385px; */
+    width: 100vw;
   }
 
-   .gallery-image {
-  display: flex;
-  flex-direction: row;
-   /* width: 426px;
-    height: 476px; */
-
-}
-
-.img-tag {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1rem;
-  width: 176px;
-  height: 40px;
-  background-color: #000;
-  color: #fff;
-  opacity: 0.75;
-  position: absolute;
-  bottom: 45%;
-  left: 5%;
-  cursor: pointer;
-  padding: 16px;
-  /* align-self: flex-end; */
-  z-index: 999;
-}
-  .grid-gallery {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1.5rem;
+  .header {
+    width: 100%;
+    display: flex;
   }
+
+  .header .logo {
+    width: 5rem;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+
+  .header-link {
+    font-size: 9px !important;
+    width: 125px !important;
+  }
+
+  .gallery-image {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .img-tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    width: 176px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.75;
+    position: absolute;
+    bottom: 45%;
+    left: 0% !important;
+    width: 5rem !important;
+    cursor: pointer;
+    padding: 16px;
+    /* align-self: flex-end; */
+    z-index: 999;
+  }
+
   .gallery-details {
     display: flex;
     flex-direction: column;
@@ -423,8 +435,8 @@
   }
   .artist-message {
     margin-top: 1rem;
-   /*  background: red; */
-       line-height: 35px;
+    /*  background: red; */
+    line-height: 35px;
   }
   .artist-message h1 {
     font-size: 100px;
