@@ -137,6 +137,7 @@
   align-items: center;
   margin-top: 3rem;
   margin-left: 2.78%;
+  width: 20rem;
 }
 
 .artist-message > h1 {
@@ -147,6 +148,7 @@
   line-height: 150px;
   height: 150px;
   color: #f3f3f3;
+  width:25rem;
 }
 .art-text {
   display: flex;
